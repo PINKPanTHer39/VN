@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &14559310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14559312}
+  - component: {fileID: 14559311}
+  m_Layer: 0
+  m_Name: Gameplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &14559311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14559310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce507e2de45a884aa65e6bd73db115e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFile: {fileID: 4900000, guid: 09a7bcd14ed8425489698b5ae5e8973e, type: 3}
+--- !u!4 &14559312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14559310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &229885826
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +180,7 @@ GameObject:
   - component: {fileID: 229885829}
   - component: {fileID: 229885828}
   m_Layer: 5
-  m_Name: Akira
+  m_Name: kasumii
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,8 +203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -299.62836, y: -152.5}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -427.83002, y: -73.72898}
+  m_SizeDelta: {x: 331.601, y: 368.543}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &229885828
 MonoBehaviour:
@@ -181,7 +226,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 629c240e8790c984cb3980b385036f8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -278,7 +323,7 @@ GameObject:
   - component: {fileID: 452513860}
   - component: {fileID: 452513859}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,8 +346,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 20.6375, y: -1.9876}
-  m_SizeDelta: {x: 449.6356, y: 33.9754}
+  m_AnchoredPosition: {x: 46.47171, y: -1.9876}
+  m_SizeDelta: {x: 423.8014, y: 33.9754}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &452513859
 MonoBehaviour:
@@ -326,10 +371,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: cb1a5c2aa52d2c7469720df0e8da22fd, type: 3}
-    m_FontSize: 22
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -337,7 +382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E44\u0E07 \u0E40\u0E08\u0E49\u0E32\u0E1A\u0E49\u0E32\u0E2D\u0E32\u0E01\u0E34\u0E23\u0E30"
+  m_Text: EP. 1
 --- !u!222 &452513860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -382,7 +427,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -466,8 +511,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 119.67822, y: -133.70187}
-  m_SizeDelta: {x: -257.9211, y: -284.4289}
+  m_AnchoredPosition: {x: 126.1, y: -165}
+  m_SizeDelta: {x: -320.595, y: -358.0026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964134515
 MonoBehaviour:
@@ -482,7 +527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6117647}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -542,8 +587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8102, y: -19.2992}
-  m_SizeDelta: {x: 788.62, y: 443.5991}
+  m_AnchoredPosition: {x: -1.0269, y: -63.203}
+  m_SizeDelta: {x: 1142.0537, y: 642.4054}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1368745135
 MonoBehaviour:
@@ -699,7 +744,7 @@ GameObject:
   - component: {fileID: 1875817506}
   - component: {fileID: 1875817505}
   m_Layer: 5
-  m_Name: Aiko
+  m_Name: Hinata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,7 +767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -247.27, y: -39.158}
+  m_AnchoredPosition: {x: -427.83, y: -94.658}
   m_SizeDelta: {x: 288.4528, y: 326.685}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1875817505
@@ -745,7 +790,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 473e45a289e02e440944688c16c51461, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dabacc5be31e6a642979d3fc3d7402fc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
